@@ -143,7 +143,7 @@
       </div>
       <div class="stat">
         <span class="stat-number">0</span>
-        <span class="stat-label">false positives across 575 real CT scans in validation</span>
+        <span class="stat-label">false positives across 945 real clinical files in three modalities</span>
         <span class="stat-source">DicomLock, 2026</span>
       </div>
     </div>
@@ -374,7 +374,29 @@
 
         <div class="evidence-card evidence-wide">
           <div class="evidence-head">
-            <span class="evidence-journal">DicomLock validation</span>
+            <span class="evidence-journal">DicomLock validation, real clinical data</span>
+            <span class="evidence-date">2026</span>
+          </div>
+          <h4>Run on real public TCIA imaging across multiple modalities and body regions. This is the corpus the preprint cites.</h4>
+          <div class="validation-metrics">
+            <div class="vm">
+              <span class="vm-num">0</span>
+              <span class="vm-text">false positives and 0 fidelity breaks across 945 real clinical files</span>
+            </div>
+            <div class="vm">
+              <span class="vm-num">4</span>
+              <span class="vm-text">public TCIA datasets covering three modalities (CT, MR, radiography) and three body regions (chest, abdomen, head)</span>
+            </div>
+            <div class="vm">
+              <span class="vm-num">623</span>
+              <span class="vm-text">native and lossless files rebuilt bit-exact across 13 transfer syntaxes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="evidence-card evidence-wide">
+          <div class="evidence-head">
+            <span class="evidence-journal">DicomLock validation, mixed-compression corpus</span>
             <span class="evidence-date">2026</span>
           </div>
           <h4>Run against a heterogeneous corpus of compressed, big-endian, and private-tag files drawn entirely from on-disk test data, with no network download.</h4>
